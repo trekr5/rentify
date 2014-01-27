@@ -46,5 +46,8 @@ end
 
 group :development, :test do
   gem 'rspec'
-  gem 'rspec-rails'
-end
+  gem 'rspec-rails' 
+  gem 'mocha'
+  gem 'webrat' 
+ end
+
