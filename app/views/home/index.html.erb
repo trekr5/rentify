@@ -1,9 +1,9 @@
 
 
- <%= form_for :home, :method => :post  do |f| %>
+ <%= form_for :contact, :url => contacts_path do |f| %>
  <p>
   <%= f.label :email %>
-  <%= f.text_field :email, :value => "Email" %>
+  <%= f.text_field :email, :value => "Email", :required => true %>
  </p>
 
  <p>

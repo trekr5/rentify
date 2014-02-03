@@ -16,9 +16,11 @@ Rentify::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-   resources :user
-   resources :posts
+#   resources :user
+#   resources :posts
+   get "home/thanks" => "home#thanks"
    resources :home
+   resources :contacts
 
   # Example resource route with options:
   #   resources :products do

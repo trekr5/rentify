@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
- validates_presence_of :email
- validates_presence_of :postcode
+ validates :email, presence: true
+ validates :postcode, presence: true, length: { minimum: 15 }
 
 end
