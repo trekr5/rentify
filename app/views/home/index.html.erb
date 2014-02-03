@@ -1,11 +1,22 @@
 
 
-<form id='new_form'>
-  <label for='email'>email:</label>
-  <input name='email' type='string' />
-  <label for='postcode:<label>
-  <input name='postcode' type='text' />
+ <%= form_for :home, :method => :post  do |f| %>
+ <p>
+  <%= f.label :email %>
+  <%= f.text_field :email, :value => "Email" %>
+ </p>
 
-  <input type='submit' id='download_ebook' value='Download ebook' />
+ <p>
+  <%= f.label :postcode %>
+  <%= f.text_field :postcode, :value => "Postcode" %>
+ </p>
+
+ <p>
+ <%=  f.submit :value => "Download ebook" %>
+ </p>
+
+<% end %>
+
 <h1>This is the where where the postcode and email address will go</h1>
+
 

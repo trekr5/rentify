@@ -1,4 +1,7 @@
 Rentify::Application.routes.draw do
+ #the first line in the route file gets executed first
+  get "index/home"
+  get "index/list"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -14,6 +17,8 @@ Rentify::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
    resources :user
+   resources :posts
+   resources :home
 
   # Example resource route with options:
   #   resources :products do
